@@ -8,22 +8,20 @@ import java.util.ArrayList;
 
 public class Model {
 
-    private View view;
-
     /**
-     * @param view in order to give Model class an ability to call View methods inside of own ones
+     * Model constructor takes View instance to use View methods inside Model ones
      */
+    private View view;
     public Model(View view){
         this.view = view;
     }
-
-    ContainChecker check = new ContainChecker();
 
     /**
      * "search" method finds and prints all contacts that have "srch1" parameter in their data
      * @param srch1 is a substring that is going to be found in contact elements
      */
     public void search(String srch1){
+        ContainChecker check = new ContainChecker();
         view.printMessage(TextConstants.searchOne);
         view.printHeader();
         for(Contact contact : Contact.values()){
@@ -40,6 +38,7 @@ public class Model {
      * @param srch2 - 2nd searching arg
      */
     public void search(String srch1, String srch2){
+        ContainChecker check = new ContainChecker();
         view.printMessage(TextConstants.searchTwo);
         view.printHeader();
         for (Contact contact : Contact.values()){
@@ -69,9 +68,5 @@ public class Model {
         view.printMessage(TextConstants.sortedSurnames);
         view.printHeader();
         sorter.sortSurnames(new ArrayList<String>());
-
     }
-
-
-
 }

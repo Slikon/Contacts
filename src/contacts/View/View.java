@@ -7,7 +7,6 @@ public class View {
     public void printMessage(String msg){
         System.out.println(msg);
     }
-
     public void drawLine(){
         System.out.println("=================================================================================================");
     }
