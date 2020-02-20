@@ -1,7 +1,17 @@
 package contacts.Model;
 
-public enum Contacts {
-    VIACHESLAV("0674777231", "slava.kulik09");
+import contacts.Controller.Controller;
+
+public enum Contact {
+
+    SLAVA("Viacheslav", "Kulyk", "0674777231", null, "Slikon"),
+    HELEN("Helen", "Gris", "0982315432", "helen.gris@gmail.com", null),
+    DENIS("Denis", "Hunter", "0638800555", "hunter1337@mail.ru", "HunterNum1"),
+    DARIA("Daria", "Shevchuk", "0672593271", "shevch.d@yahoo.com", "Shevchuk2000" ),
+    VARIAN("Varian", "Wrynn", "0962347162", null, "FuryWarrior"),
+    ARTHAS("Arthas", "Menetil", "099777569", "arthas_lich@ukr.net", "FrostMourne99");
+
+
 
     private final String name;
     private final String surname;
@@ -9,8 +19,9 @@ public enum Contacts {
     private final String email;
     private final String skype;
 
-    private final 
-    private Contacts(String name, String surname, String phoneNum, String email, String skype){
+
+    //public static final String dataAbsent = "no data";
+    private Contact(String name, String surname, String phoneNum, String email, String skype){
         this.name = name;
         this.surname = surname;
         this.phoneNum = phoneNum;
@@ -27,4 +38,12 @@ public enum Contacts {
     public String getSkype() {
         return skype;
     }
+
+    public String checkName() { return this.name == null ? "" : this.getName(); }
+    public String checkSurname() { return this.name == null ? "" : this.getSurname(); }
+    public String checkPhone() { return this.phoneNum == null ? "" : this.getPhoneNum(); }
+    public String checkMail() { return this.email == null ? "" : this.getEmail(); }
+    public String checkSkype() { return this.skype == null ? "" : this.getSkype(); }
+
+
 }

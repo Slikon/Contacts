@@ -2,3 +2,7 @@
 out/
 *.iml
 package-info.java
+contacts/Model/package-info.java
+contacts/View/package-info.java
+contacts/Controller/package-info.java
+javadoc/
