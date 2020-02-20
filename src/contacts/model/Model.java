@@ -48,7 +48,7 @@ public class Model {
 
     /**
      * Method that creates list of contacts, sorted by their names
-     * @see Sorter#sortNames(ArrayList) to see the sorting algorythm
+     * @see Sorter#sortNames(java.util.List) to see the sorting algorythm
      */
     public void sortByName(){
         Sorter sorter = new Sorter(view);
@@ -59,7 +59,7 @@ public class Model {
 
     /**
      * Method that creates list of contacts, sorted by their surnames
-     * @see Sorter#sortSurnames(ArrayList) to see the sorting algorythm
+     * @see Sorter#sortSurnames(java.util.List) to see the sorting algorythm
      */
     public void sortBySurname(){
         Sorter sorter = new Sorter(view);

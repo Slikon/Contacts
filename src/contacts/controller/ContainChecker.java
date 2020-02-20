@@ -10,8 +10,10 @@ public class ContainChecker {
      * @return  Method returns true if substring is found, false if now
      */
     public boolean contains(Contact contact, String srch){
-        return contact.checkName().contains(srch) || contact.checkSurname().contains(srch) || contact.checkPhone().contains(srch)
-                || contact.checkMail().contains(srch) || contact.checkSkype().contains(srch);
+        return contact.checkName().contains(srch) || contact.checkSurname().contains(srch)
+                || contact.checkPhone().contains(srch)
+                || contact.checkMail().contains(srch)
+                || contact.checkSkype().contains(srch);
     }
 
     /**
