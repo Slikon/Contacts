@@ -4,8 +4,20 @@ import contacts.Controller.Controller;
 import contacts.Model.Model;
 import contacts.View.View;
 
-public class Main {
+/**
+ * Main class is responsible for launching MVC model through Controller.
+ * Instances of MVC are created in main
+ * @author Viacheslav Kulyk
+ * @version 1.0.7
+ * @since 1.0.0
+ * @
+ */
 
+public class Main {
+    /**
+     * main method - starting poing of program's workflow
+     * @param args
+     */
     public static void main(String[] args) {
         View view = new View();
         Model model = new Model(view);

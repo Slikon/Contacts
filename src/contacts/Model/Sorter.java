@@ -9,7 +9,7 @@ public class Sorter {
     public Sorter(View view){
         this.view = view;
     }
-    /*public static ArrayList<String> listOfNames = new ArrayList<String>();*/
+
 
     public static void sortNames(ArrayList<String> nameList) {
         for (Contact contact : Contact.values()){

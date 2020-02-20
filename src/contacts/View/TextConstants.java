@@ -15,6 +15,8 @@ public interface TextConstants {
     public String cMail = "Email";
     public String cSkype = "Skype";
 
+    /* ************************************************************** */
+
     public String c1Format = "%-15s";
     public String c2Format = "%-15s";
     public String c3Format = "%-20s";
