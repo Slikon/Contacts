@@ -1,6 +1,6 @@
-package contacts.View;
+package contacts.view;
 
-import contacts.Model.Contact;
+import contacts.model.Contact;
 
 public class View {
 

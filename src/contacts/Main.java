@@ -1,13 +1,13 @@
 package contacts;
 
-import contacts.Controller.Controller;
-import contacts.Model.Model;
-import contacts.View.View;
+import contacts.controller.Controller;
+import contacts.model.Model;
+import contacts.view.View;
 
 /**
  * Main class is responsible for launching MVC model through Controller.
  * Instances of MVC are created in main
- * @author Viacheslav Kulyk
+ * @author <strong>Viacheslav Kulyk</strong>
  * @version 1.0.7
  * @since 1.0.0
  * @

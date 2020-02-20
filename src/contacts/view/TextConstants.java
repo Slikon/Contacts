@@ -1,9 +1,7 @@
-package contacts.View;
-
-import contacts.Model.Model;
+package contacts.view;
 
 public interface TextConstants {
-    public String originalList = "Here is an original list of contacts: ";
+    public String originalList = "Original list of contacts: ";
     public String sortedNames = "List of contacts, sorted by name";
     public String sortedSurnames = "List of contacts, sorted by surname";
 
@@ -26,6 +24,4 @@ public interface TextConstants {
     public String c4Format = "%-30s";
     public String c5Format = "%-20s";
     public String formatInfo = c1Format + " " + c2Format + " " + c3Format + " " + c4Format + " " + c5Format;
-
-
 }

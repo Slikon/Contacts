@@ -1,7 +1,7 @@
-package contacts.Test;
+package contacts.test;
 
-import contacts.Controller.ContainChecker;
-import contacts.Model.Contact;
+import contacts.controller.ContainChecker;
+import contacts.model.Contact;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,7 +9,7 @@ public class TestContainChecker {
     @Test
     public void testContains(){
         ContainChecker containChecker = new ContainChecker();
-        boolean result = containChecker.contains(Contact.ARTHAS, "thas");
+        boolean result = containChecker.contains(Contact.ARTHAS, "Frost");
         Assert.assertTrue(result);
     }
     @Test

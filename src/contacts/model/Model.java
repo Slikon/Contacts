@@ -1,13 +1,12 @@
-package contacts.Model;
+package contacts.model;
 
-import contacts.Controller.ContainChecker;
-import contacts.View.TextConstants;
-import contacts.View.View;
+import contacts.controller.ContainChecker;
+import contacts.view.TextConstants;
+import contacts.view.View;
 
 import java.util.ArrayList;
 
 public class Model {
-
     /**
      * Model constructor takes View instance to use View methods inside Model ones
      */
@@ -15,7 +14,6 @@ public class Model {
     public Model(View view){
         this.view = view;
     }
-
     /**
      * "search" method finds and prints all contacts that have "srch1" parameter in their data
      * @param srch1 is a substring that is going to be found in contact elements

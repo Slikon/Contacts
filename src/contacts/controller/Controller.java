@@ -1,8 +1,7 @@
-package contacts.Controller;
+package contacts.controller;
 
-import contacts.Model.Model;
-import contacts.Model.Sorter;
-import contacts.View.*;
+import contacts.model.Model;
+import contacts.view.*;
 
 public class Controller {
     private Model model;

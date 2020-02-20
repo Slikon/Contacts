@@ -1,6 +1,6 @@
-package contacts.Model;
+package contacts.model;
 
-import contacts.View.View;
+import contacts.view.View;
 
 import java.util.*;
 
@@ -10,8 +10,7 @@ public class Sorter {
         this.view = view;
     }
 
-
-    public static void sortNames(ArrayList<String> nameList) {
+    public static void sortNames(List<String> nameList) {
         for (Contact contact : Contact.values()){
             nameList.add(contact.checkName());
         }
@@ -26,14 +25,14 @@ public class Sorter {
         view.drawSpace();
     }
 
-    public static void sortSurnames(ArrayList<String> surList) {
+    public static void sortSurnames(List<String> surList) {
         for (Contact contact : Contact.values()){
             surList.add(contact.checkSurname());
         }
         Collections.sort(surList);
         for (String sur : surList){
             for (Contact contact : Contact.values()){
-                if (contact.checkSurname().equals(sur)){
+                if (contact.checkSurname().equals(sur)) {
                     view.printContactInfo(contact);
                 }
             }

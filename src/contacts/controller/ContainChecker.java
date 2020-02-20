@@ -1,6 +1,6 @@
-package contacts.Controller;
+package contacts.controller;
 
-import contacts.Model.Contact;
+import contacts.model.Contact;
 
 public class ContainChecker {
     /**
